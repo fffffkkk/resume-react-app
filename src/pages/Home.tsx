@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import styles from '@styles/Home.module.css';
-import { Profile, About, Experience, ProjectList } from '@/components';
+import { Profile, About, Experience, ProjectList, Stack } from '@/components';
 
 const Home: FC = ({}) => {
 	return (
@@ -9,8 +9,9 @@ const Home: FC = ({}) => {
 			<Profile />
 			<div className={styles.container__sections}>
 				<About />
-				<Experience />
+				<Stack />
 				<ProjectList />
+				<Experience />
 			</div>
 		</div>
 	);
