@@ -23,10 +23,6 @@
       "@styles/*": ["./src/styles/*"],
     },
   },
-<<<<<<< HEAD
   "include": ["src", ".prettierrc.cjs", "vite.config.ts"],
-=======
-  "include": ["src", ".prettierrc.cjs"],
->>>>>>> dev
   "references": [{ "path": "./tsconfig.node.json" }],
 }

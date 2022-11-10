@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /// <reference types="vite-plugin-svgr/client" />
 
 import { defineConfig } from 'vite';
@@ -8,15 +7,6 @@ import * as path from 'path';
 
 export default defineConfig({
 	plugins: [react(), svgr()],
-=======
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-import * as path from 'path';
-
-export default defineConfig({
-	plugins: [react()],
->>>>>>> dev
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
