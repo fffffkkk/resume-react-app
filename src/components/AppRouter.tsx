@@ -7,8 +7,8 @@ import Registration from '@pages/Registration';
 const AppRouter: FC = ({}) => {
 	return (
 		<Routes>
-			<Route path='/' element={<Registration />} />
-			<Route path='/home' element={<Home />} />
+			<Route path='/reg' element={<Registration />} />
+			<Route path='/' element={<Home />} />
 		</Routes>
 	);
 };

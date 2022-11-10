@@ -1,13 +1,17 @@
 import React, { FC } from 'react';
 
-// interface HomeProps {
-
-// }
+import styles from '@styles/Home.module.css';
+import { Profile, About, Experience, ProjectList } from '@/components';
 
 const Home: FC = ({}) => {
 	return (
-		<div>
-			<div></div>
+		<div className={styles.container}>
+			<Profile />
+			<div className={styles.container__sections}>
+				<About />
+				<Experience />
+				<ProjectList />
+			</div>
 		</div>
 	);
 };
