@@ -1,0 +1,12 @@
+.btn {
+	border-radius: 0.75rem;
+	font-weight: 500;
+	border: none;
+	color: #000;
+	transition: background-color 0.15s ease-in;
+	font-size: 0.9rem;
+}
+.btn:hover {
+	background-color: var(--text-color-d);
+	cursor: pointer;
+}

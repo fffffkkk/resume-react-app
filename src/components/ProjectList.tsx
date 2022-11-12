@@ -1,58 +1,59 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
-import { ReactComponent as FinderLogoIcon } from '@assets/icon/finder-vk-logo.svg';
+import { useFetch } from '@/hooks/useFetch';
 import styles from '@styles/ProjectList.module.css';
+import Button from '@UI/Button';
+import { ProjectService } from '@services/ProjectService';
+import ProjectItem from './ProjectItem';
+
+const initialDataState = [
+	{
+		title: 'FinderVK 🚀',
+		desc: 'Приложение, позволяющее просматривать, кто посещал твою страницу VK.',
+		topics: ['React', 'Html', 'Sass', 'TS', 'Vite'],
+	},
+	{
+		title: 'Resume site',
+		desc: 'Сайт с моим резюме.',
+		topics: ['React', 'Html', 'Css', 'TS', 'Vite'],
+	},
+];
 
 const ProjectList: FC = ({}) => {
+	const [data, setData] = useState(initialDataState);
+	const isAdmin = true;
+	console.log('1');
+	const [createNewProject, createIsLoading, createError] = useFetch(
+		async () => {
+			await ProjectService.addNewProject(
+				'1',
+				'Мой новый проект',
+				'Это мой новый проект',
+				['1', '2']
+			);
+		}
+	);
+	console.log('1');
+
+	useEffect(() => {
+		createNewProject(); // FIX THIS
+	}, []);
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.section__project}>
-				<h2>Проекты</h2>
+				<div>
+					<h2>Проекты</h2>
+					{isAdmin && (
+						<Button cls={styles['btn-admin']}>
+							Добавить проект в портфолио
+						</Button>
+					)}
+				</div>
 				<div className={styles['section__project-right']}>
-					<div className={styles['project__list-item']}>
-						<div className={styles['list__item-info']}>
-							<div className={styles['item__info-inner']}>
-								<FinderLogoIcon className={styles['item__info-img']} />
-							</div>
-							<div className={styles['list__item-text']}>
-								<h3 className={styles['item__info-title']}>FinderVK</h3>
-								<p className={styles['item__info-subtitle']}>
-									Приложение, позволяющее видеть кто зашел к тебе на страницу в
-									VK.
-								</p>
-							</div>
-						</div>
-						<ul className={styles['list__item-topics']}>
-							<li>React</li>
-							<li>Html</li>
-							<li>Css</li>
-						</ul>
-						<button className={styles['project__list-btn']}>
-							Посмотреть проект
-						</button>
-					</div>
-					<div className={styles['project__list-item']}>
-						<div className={styles['list__item-info']}>
-							<div className={styles['item__info-inner']}>
-								<FinderLogoIcon className={styles['item__info-img']} />
-							</div>
-							<div className={styles['list__item-text']}>
-								<h3 className={styles['item__info-title']}>FinderVK</h3>
-								<p className={styles['item__info-subtitle']}>
-									Приложение, позволяющее видеть кто зашел к тебе на страницу в
-									VK.
-								</p>
-							</div>
-						</div>
-						<ul className={styles['list__item-topics']}>
-							<li>React</li>
-							<li>Html</li>
-							<li>Css</li>
-						</ul>
-						<button className={styles['project__list-btn']}>
-							Посмотреть проект
-						</button>
-					</div>
+					{data.map((item) => (
+						<ProjectItem key={item.title} data={item} />
+					))}
 				</div>
 			</div>
 		</section>

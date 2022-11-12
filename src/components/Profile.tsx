@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 
 import styles from '@styles/Profile.module.css';
 import AvatarImg from '@assets/img/img-profile.jpg';
+import Button from '@UI/Button';
 
 const Profile: FC = ({}) => {
 	return (
@@ -21,7 +22,7 @@ const Profile: FC = ({}) => {
 						</p>
 					</div>
 				</div>
-				<button className={styles.main__btn}>Открыть резюме</button>
+				<Button cls={styles.main__btn}>Открыть резюме</Button>
 			</div>
 		</main>
 	);
