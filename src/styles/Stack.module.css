@@ -14,7 +14,6 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
-
 .stack__item {
 	max-width: 250px;
 	text-align: center;
