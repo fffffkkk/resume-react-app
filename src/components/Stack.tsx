@@ -14,7 +14,7 @@ const Stack: FC = ({}) => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.section__stack}>
-				<h2>Stack</h2>
+				<h2>Технологии</h2>
 				<div className={styles['section__stack-right']}>
 					<div className={styles.stack__item}>
 						<HtmlIcon className={styles['stack__item-icon']} />
@@ -26,7 +26,7 @@ const Stack: FC = ({}) => {
 					</div>
 					<div className={styles.stack__item}>
 						<JSIcon className={styles['stack__item-icon']} />
-						<p className={styles['stack__item-desc']}>JS</p>⭐⭐⭐⭐
+						<p className={styles['stack__item-desc']}>JS</p>⭐⭐⭐
 					</div>
 					<div className={styles.stack__item}>
 						<FirebaseIcon className={styles['stack__item-icon']} />

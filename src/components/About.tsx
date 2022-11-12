@@ -6,7 +6,7 @@ const About: FC = ({}) => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.section__about}>
-				<h2>About me</h2>
+				<h2>Обо мне</h2>
 				<div className={styles['section__about-right']}>
 					<p className={styles['about__text']}>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
@@ -34,12 +34,14 @@ const About: FC = ({}) => {
 								<p>Почта</p>
 								<span>alexuppereks@gmail.com</span>
 							</li>
-							<li className={styles['card__list-item']}>
-								<p>Вконтакте</p>
-								<a target='_blank' href='https://vk.com/id665485247'>
-									Ссылка на мой VK
-								</a>
-							</li>
+							<a
+								href='https://github.com/fffffkkk'
+								target='_blank'
+								className={styles['card__list-item']}
+							>
+								<p>GitHub</p>
+								Ссылка на мой GitHub
+							</a>
 						</ul>
 					</div>
 				</div>
