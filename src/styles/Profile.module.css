@@ -20,15 +20,8 @@
 }
 .main__btn {
 	height: 100%;
-	border-radius: 0.75rem;
-	font-weight: 500;
-	border: none;
 	padding: 0.75rem;
-	cursor: pointer;
 	background-color: var(--text-color-w);
-	color: #000;
-	transition: background-color 0.15s ease-in;
-	font-size: 0.9rem;
 }
 .main__user-info {
 	display: flex;
@@ -50,9 +43,6 @@
 .user__text-subtitle {}
 
 /* HOVER */
-.main__btn:hover {
-	background-color: var(--text-color-d);
-}
 
 /* MEDIA */
 

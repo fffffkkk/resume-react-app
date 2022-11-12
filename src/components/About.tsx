@@ -8,17 +8,13 @@ const About: FC = ({}) => {
 			<div className={styles.section__about}>
 				<h2>Обо мне</h2>
 				<div className={styles['section__about-right']}>
-					<p className={styles['about__text']}>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-						modi eos assumenda et fuga placeat esse corrupti vel perspiciatis
-						architecto odit fugiat, debitis repellendus quia, libero qui. Autem
-						fugit, architecto facere dolores vel quas esse ex rem minima sed
-						distinctio.
+					<p className={styles.about__text}>
+						Студент 2 курса Брянского Государственного Tехнического Универа.
 						<br />
 						<br />
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-						delectus voluptates perspiciatis quos deleniti, id deserunt modi
-						magni aperiam dolore.
+						Увлекаюсь frontend(на react + ts + redux/toolkit) и немного
+						backend(на python) разработкой. Сейчас начал изучать мобильную
+						разработку на react native.
 					</p>
 					<div className={styles.about__card}>
 						<ul className={styles['about__card-list']}>
