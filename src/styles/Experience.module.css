@@ -1,0 +1,28 @@
+/* SECTION */
+.section {
+	padding: 1.75rem 0 1.75rem 0;
+	border-bottom: 1px solid var(--border-color);
+}
+.section__experience {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.section__experience-right {
+	width: 70%;
+}
+/* .experience__text {
+	text-align: start;
+} */
+
+/* MEDIA */
+
+@media (max-width: 1000px) {
+	.section__experience {
+		display: inline-block;
+	}
+	.section__experience-right {
+		padding-top: 0.25rem;
+		width: 100%;
+	}
+}
