@@ -22,7 +22,12 @@ const Profile: FC = ({}) => {
 						</p>
 					</div>
 				</div>
-				<Button cls={styles.main__btn}>Открыть резюме</Button>
+				<a
+					href='https://bryansk.hh.ru/resume/dcabca33ff0b4cb8140039ed1f777279506b65'
+					target='_blank'
+				>
+					<Button cls={styles.main__btn}>Открыть резюме</Button>
+				</a>
 			</div>
 		</main>
 	);

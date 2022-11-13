@@ -6,7 +6,7 @@ import styles from '@styles/ProjectList.module.css';
 import { response } from '@/utils/data';
 
 const ProjectList: FC = ({}) => {
-	const [data, setData] = useState(response);
+	const [data, setData] = useState(response); // Feature
 
 	return (
 		<section className={styles.section}>

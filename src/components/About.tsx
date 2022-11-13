@@ -22,10 +22,14 @@ const About: FC = ({}) => {
 								<p>Локация</p>
 								<span>Россия, Брянск</span>
 							</li>
-							<li className={styles['card__list-item']}>
+							<a
+								href='https://bryansk.hh.ru/resume/dcabca33ff0b4cb8140039ed1f777279506b65'
+								target='_blank'
+								className={styles['card__list-item']}
+							>
 								<p>Резюме</p>
-								<span>Fix: Модальное окно</span>
-							</li>
+								<span>Ссылка на моё резюме</span>
+							</a>
 							<li className={styles['card__list-item']}>
 								<p>Почта</p>
 								<span>alexuppereks@gmail.com</span>
