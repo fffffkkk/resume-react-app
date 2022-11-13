@@ -9,7 +9,7 @@ const Experience: FC = ({}) => {
 				<h2>Опыт</h2>
 				<div className={styles['section__experience-right']}>
 					<p className={styles.experience__text}>
-						На данный момент учавствую в командной разработке FinderVK.
+						На данный момент участвую в командной разработке FinderVK.
 					</p>
 				</div>
 			</div>
