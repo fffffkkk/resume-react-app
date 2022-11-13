@@ -16,14 +16,6 @@
 	gap: 1rem;
 }
 
-/* IF ADMIN */
-
-.btn-admin {
-	padding: 0.5rem;
-	background-color: #a7d3ff;
-	margin: 0.75rem 0  0.75rem 0;
-}
-
 /* MEDIA */
 
 @media (max-width: 800px) {

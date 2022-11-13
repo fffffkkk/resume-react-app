@@ -1,43 +1,12 @@
 import React, { FC, useEffect, useState } from 'react';
 
-import { useFetch } from '@/hooks/useFetch';
-import styles from '@styles/ProjectList.module.css';
 import Button from '@UI/Button';
-import { ProjectService } from '@services/ProjectService';
-import ProjectItem from './ProjectItem';
-
-const initialDataState = [
-	{
-		title: 'FinderVK 🚀',
-		desc: 'Приложение, позволяющее просматривать, кто посещал твою страницу VK.',
-		topics: ['React', 'Html', 'Sass', 'TS', 'Vite'],
-	},
-	{
-		title: 'Resume site',
-		desc: 'Сайт с моим резюме.',
-		topics: ['React', 'Html', 'Css', 'TS', 'Vite'],
-	},
-];
+import ProjectItem from '@components/ProjectItem';
+import styles from '@styles/ProjectList.module.css';
+import { response } from '@/utils/data';
 
 const ProjectList: FC = ({}) => {
-	const [data, setData] = useState(initialDataState);
-	const isAdmin = true;
-	console.log('1');
-	const [createNewProject, createIsLoading, createError] = useFetch(
-		async () => {
-			await ProjectService.addNewProject(
-				'1',
-				'Мой новый проект',
-				'Это мой новый проект',
-				['1', '2']
-			);
-		}
-	);
-	console.log('1');
-
-	useEffect(() => {
-		createNewProject(); // FIX THIS
-	}, []);
+	const [data, setData] = useState(response);
 
 	return (
 		<section className={styles.section}>
