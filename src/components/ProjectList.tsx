@@ -19,6 +19,9 @@ const initialDataState = [
 	},
 ];
 
+import { ReactComponent as FinderLogoIcon } from '@assets/icon/finder-vk-logo.svg';
+import styles from '@styles/ProjectList.module.css';
+
 const ProjectList: FC = ({}) => {
 	const [data, setData] = useState(initialDataState);
 	const isAdmin = true;
