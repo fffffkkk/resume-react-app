@@ -5,7 +5,7 @@ import Button from '@UI/Button';
 import styles from '@styles/ProjectItem.module.css';
 
 interface ProjectItemProps {
-	data: { title: string, desc: string, topics: string[] };
+	data: { link: string, title: string, desc: string, topics: string[] };
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({ data }) => {
@@ -25,7 +25,9 @@ const ProjectItem: FC<ProjectItemProps> = ({ data }) => {
 					<li key={topic}>{topic}</li>
 				))}
 			</ul>
-			<Button cls={styles['project__list-btn']}>Посмотреть проект</Button>
+			<a href={data.link} target='_blank'>
+				<Button cls={styles['project__list-btn']}>Посмотреть проект</Button>
+			</a>
 		</div>
 	);
 };
