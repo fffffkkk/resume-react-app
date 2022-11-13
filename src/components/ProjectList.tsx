@@ -3,10 +3,10 @@ import React, { FC, useEffect, useState } from 'react';
 import Button from '@UI/Button';
 import ProjectItem from '@components/ProjectItem';
 import styles from '@styles/ProjectList.module.css';
-import { response } from '@/utils/data';
+import { projects } from '@/utils/data';
 
 const ProjectList: FC = ({}) => {
-	const [data, setData] = useState(response); // Feature
+	const [data, setData] = useState(projects); // Feature
 
 	return (
 		<section className={styles.section}>
