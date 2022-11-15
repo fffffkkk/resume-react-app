@@ -6,6 +6,7 @@ import styles from '@styles/ProjectItem.module.css';
 
 interface ProjectItemProps {
 	data: { link: string, title: string, desc: string, topics: string[] };
+}
 
 const ProjectItem: FC<ProjectItemProps> = ({ data }) => {
 	return (

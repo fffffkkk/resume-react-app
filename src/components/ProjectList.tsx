@@ -13,11 +13,6 @@ const ProjectList: FC = ({}) => {
 			<div className={styles.section__project}>
 				<div>
 					<h2>Проекты</h2>
-					{isAdmin && (
-						<Button cls={styles['btn-admin']}>
-							Добавить проект в портфолио
-						</Button>
-					)}
 				</div>
 				<div className={styles['section__project-right']}>
 					{data.map((item) => (
