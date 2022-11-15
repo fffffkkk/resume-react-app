@@ -8,6 +8,7 @@ import { projects } from '@/utils/data';
 const ProjectList: FC = ({}) => {
 	const [data, setData] = useState(projects); // Feature
 
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.section__project}>

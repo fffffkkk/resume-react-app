@@ -8,6 +8,7 @@ interface ProjectItemProps {
 	data: { link: string, title: string, desc: string, topics: string[] };
 }
 
+
 const ProjectItem: FC<ProjectItemProps> = ({ data }) => {
 	return (
 		<div className={styles['project__list-item']}>

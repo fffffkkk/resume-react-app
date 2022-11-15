@@ -3,6 +3,7 @@ export const projects = [
 		link: 'https://github.com/AlsoTeam/FinderVkFrontend',
 		title: 'FinderVK 🚀',
 		desc: 'Приложение, позволяющее просматривать, кто посещал твою страницу VK(В разработке).',
+
 		topics: ['React', 'Html', 'Sass', 'TS', 'Vite'],
 	},
 	{
