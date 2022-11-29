@@ -1,5 +1,18 @@
 export const projects = [
 	{
+		link: 'https://github.com/fffffkkk/ecommerce-react-app',
+		title: 'E-commerce 🛒',
+		desc: 'Практиковал Redux/toolkit и Firebase',
+		topics: [
+			'React',
+			'Redux/toolkit',
+			'RTKQuery',
+			'Tailwind',
+			'TS',
+			'Firebase',
+		],
+	},
+	{
 		link: 'https://github.com/AlsoTeam/FinderVkFrontend',
 		title: 'FinderVK 🚀',
 		desc: 'Приложение, позволяющее просматривать, кто посещал твою страницу VK(В разработке).',
