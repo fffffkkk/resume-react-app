@@ -9,7 +9,7 @@ const About: FC = ({}) => {
 				<h2>Обо мне</h2>
 				<div className={styles['section__about-right']}>
 					<p className={styles.about__text}>
-						Студент 2 курса Брянского Государственного Tехнического Универа.
+						Студент Брянского Государственного Tехнического Университета.
 						<br />
 						<br />
 						Увлекаюсь frontend(на react + ts + redux/toolkit) и немного
