@@ -4,9 +4,7 @@ import AppRouter from '@components/AppRouter';
 
 const App = () => {
 	return (
-		<div>
-			<AppRouter />
-		</div>
+		<AppRouter />
 	);
 };
 
